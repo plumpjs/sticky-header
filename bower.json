@@ -1,0 +1,27 @@
+{
+  "name": "plumpjs-sticky-header",
+  "version": "0.1.0",
+  "homepage": "https://github.com/plumpjs/sticky-header",
+  "authors": [
+    "James Howard <james@plumpdigital.co.uk>"
+  ],
+  "description": "MooTools-based sticky header that hides on scroll down and re-shows on scroll up.",
+  "main": "sticky-header.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "MooTools",
+    "sticky",
+    "header",
+    "fixed"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
