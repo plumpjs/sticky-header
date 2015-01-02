@@ -1,13 +1,15 @@
 /* exported StickyHeader */
-'use strict';
 
 /**
- * MooTools-based sticky header that hides on scroll down and re-shows on scroll up.
+ *    MooTools-based sticky header that hides on scroll down and re-shows on scroll up.
  *
- * Based on https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
+ *    Based on https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
  *
- * Relies on CSS for the show / hide animations, positioning and offsetting the main content.
+ *    Relies on CSS for the show / hide animations, positioning and offsetting the main content.
  */
+ 
+'use strict';
+ 
 var StickyHeader = new Class({
 
 	Implements : Options,
