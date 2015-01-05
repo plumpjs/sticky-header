@@ -24,11 +24,14 @@ var StickyHeader = new Class({
 	hasScrolled: false,
 
 	initialize: function(el, options) {
+		
 		this.el = $(el);
 		this.setOptions(options);
-
+		
+		// Get header height.
 		this.headerHeight = this.el.getSize().y;
 
+		// Add window event listener on scroll.
 		window.addEvent('scroll', this.onScroll.bind(this));
 
 		// Create an interval to reduce the cost of the onScroll handler.
