@@ -54,17 +54,21 @@ var StickyHeader = new Class({
 	},
 
 	onScrollChange: function() {
+		
 		var scrollTop = window.getScroll().y;
-
+		
 		// Limit scroll top to counteract iOS / OSX bounce.
 		scrollTop = scrollTop.limit(0, window.getScrollSize().y - window.getSize().y);
 
 		// Check against the minimum delta.
 		if (Math.abs(this.lastScrollTop - scrollTop) >= this.options.delta) {
+			
 			if ((scrollTop > this.lastScrollTop) && (scrollTop > this.headerHeight)) {
+				
 				// Scrolling down and beyond the header height.
 				this.el.addClass(this.options.hiddenClass);
 			} else {
+				
 				// Scolling up or header still in view.
 				this.el.removeClass(this.options.hiddenClass);
 			}
@@ -72,7 +76,5 @@ var StickyHeader = new Class({
 			// Keep the last position up-to-date.
 			this.lastScrollTop = scrollTop;
 		}
-
 	}
-
 });
